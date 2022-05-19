@@ -1,0 +1,1019 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: sans-serif;
+    color: #fff;
+    background: rgb(33,33,33);
+    background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(26,163,255,1) 100%);
+}
+
+/* NavBar */
+
+.navBar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 18px;
+    padding-left: 25px;
+}
+.logo img{
+    width: 100%;
+}
+.navBar li {
+    list-style: none;
+}
+.navBar li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    margin-right: 20px;
+}
+.navBar li a:hover{
+    color:black;
+    /* border-bottom: 3px solid rgba(26,163,255,1);
+    border-radius: 2px; */
+}
+#toogle{
+    display: none;
+    font-size: 40px;
+    padding-right:30px ;
+}
+
+/* testing area start*/
+
+.navberIcon {
+    
+    display: none;
+    margin-bottom: 50px;
+  }
+  .container{
+    max-width: 100%;
+    background-color: black;
+    position: relative;
+    /* margin-bottom: 35px; */
+  }
+  .hamburgerContainer{
+    display: inline;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    z-index: 2;
+    user-select: none;
+    cursor: pointer;
+    margin-bottom:50px ;
+  }
+  .hamburger{
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+    border-radius: 5px;
+    
+  }
+  .menuContainer{
+      width: 100%;
+      position: absolute;
+      top: 80px;
+      right: 0;
+      z-index: 1;
+      display: none;
+      flex-direction: row;
+      background-color: #33608d;
+      padding: 10px;
+      text-align: center;
+    
+  }
+  .menuContainer li{
+      display: inline;
+    list-style: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    user-select: none;
+    /* padding: 30px 0px; */
+  }
+
+  .menuContainer li:hover{
+    color: #fff;
+  }
+  .navIcon{
+    text-decoration: none;
+    color: inherit;
+  }
+  .shoeMenu{
+    /* opacity: 1; */
+    display: block;
+  }
+  .lineA,.lineB, .lineC{
+    transition: all 0.5s ease;
+  }
+  .hide{
+    opacity: 0;
+  }
+  .rotate1{
+    transform: rotate(45deg) translate(5px,8px);
+  }
+  .rotate3{
+    transform: rotate(-45deg) translate(6px ,-8px );
+  }
+  .liTag.up{
+    transform: translateY(-100px);
+    transform: rotate(180deg);
+  }
+/* testing area end */
+
+/* sectionA */
+
+.sectionA{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.SAleft{
+    width: 50%;
+    display: inline-block;
+}
+.SAleftBox{
+    width: 80%;
+    text-align: left;
+    padding-left:50px;
+}
+.SAleftBox h1{
+    font-size: 30px;
+}
+.SAbutton{
+    background: rgb(26,163,255);
+    background: linear-gradient(90deg, rgba(26,163,255,1) 0%, rgba(33,33,33,1) 100%);
+    border-radius: 7px;
+    color: #fff;
+    padding: 11px 20px;
+    border: 1px solid #fff;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+.SAbutton a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.SAbutton:hover{
+    background: rgb(33,33,33);
+    background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(26,163,255,1) 100%);
+}
+.SAright{
+    width: 50%;
+    display: inline-block;
+}
+.SAright img{
+    width: 100%;
+}
+.line{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+/* secetionB */
+
+.SBHeader{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 30px;
+    color: wheat;
+}
+.sectionB{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.SBleft{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.SBleft img{
+    width: 60%;
+}
+.SBright{
+    width: 50%;
+    display: inline-block;
+}
+.SBrightBox{
+    width: 80%;
+    text-align: left;
+    /* margin-left: 100px; */
+    margin: 0 auto;
+}
+.SBrightBox p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.SBrightBox p span{
+    font-weight: 600;
+
+}
+
+/* sectionC */
+
+.sectionC{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:0 ;
+    margin-top: 0;
+}
+.SCleft{
+    width: 50%;
+    display: inline-block;
+}
+.SCleftBox{
+    width: 80%;
+    text-align: left;
+    /* margin-left: 100px; */
+    margin: 0 auto;
+}
+.SCright{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.SCright img{
+    width: 65%;
+}
+.SCleftBox p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.SCleftBox p span{
+    font-weight: 600;
+
+}
+
+/* sectionD */
+
+.SDHeader{
+    text-align: center;
+    color: wheat;
+    font-size: 18px;
+}
+.sectionD{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.SDleft{
+    width: 50%;
+    display: inline-block;
+}
+.SDleftBox{
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+}
+.SDleftBox p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.SDleftBox p span{
+    font-weight: 600;
+}
+.SDright{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.SDimgeContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.SDimgeContainerBox{
+    width: 120px;
+    margin: 20px;
+    border: 1px solid black ;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.SDimgeContainerBox:hover{
+    transform: translateY(-10px);
+}
+.SDimgeContainerBox img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* sectionE */
+
+.SEheader{
+    text-align: center;
+    color: wheat;
+}
+.sectionE_title{
+    font-size: 40px;
+}
+
+/* sectionE */
+
+.cards{
+    padding:10px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    /* height: 400px; */
+    margin-bottom: 100px;
+
+}
+.card{
+    position: relative;
+    width: 240px;
+    height: 240px;
+    background: linear-gradient(90deg, rgba(33,33,33,1) 0% ,rgba(26,163,255,1) 100%);
+    border-radius: .5rem;
+    overflow: hidden;
+    transition: .5s;
+}
+.card_title{
+    padding: 0px 0px 0px 20px;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+}
+.card_title h3{
+    color: #fff;
+    font-size: 15px;
+    z-index: 0;
+}
+.card_title span{
+    font-size: 14px;
+}
+.card_L{
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border-radius: .5rem;
+    z-index: 1;
+}
+.cards .card_L img{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+}
+#card:hover{
+    height: 355px;
+    transition: .5s;
+}
+#card:hover .card_title{
+    opacity: 1;
+}
+#card_2:hover{
+    height: 355px;
+    transition: .5s;
+}
+#card_2:hover .card_title{
+    opacity: 1;
+}
+#card_3:hover{
+    height: 355px;
+    transition: .5s;
+}
+#card_3:hover .card_title{
+    opacity: 1;
+}
+
+/* footer */
+
+.footer{
+    background-color: rgba(33,33,33,1);
+    
+}
+.footerContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.Doogle{
+    width: 20%;
+    /* display: inline-block; */
+    /* text-align: ; */
+}
+.Fheader{
+    padding-left: 40px;
+}
+.Doogle li{
+    list-style: none;
+}
+.Doogle li a{
+    text-decoration: none;
+    color: #fff;
+}
+.Doogle li a:hover{
+    color:#1B99EE;
+}
+.faceBook{
+    width: 20%; 
+    /* display: inline-block; */
+}
+.faceBook li{
+    list-style: none;
+}
+.faceBook li a{
+    text-decoration: none;
+    color: #fff;
+    /* font-size: 20px; */
+}
+.faceBook li a:hover{
+    color:#1B99EE;
+}
+.phoneNumber{
+    width: 20%; 
+    /* display: inline-block; */
+}
+.phoneNumber li{
+    list-style: none;
+}
+/* .DophoneNumberogle li a{
+    text-decoration: none;
+    color: #fff;
+} */
+
+.gmailAccount{
+    width: 20%;
+    /* display: inline-block; */
+}
+.gmailAccount li{
+    list-style: none;
+}
+.gmailAccount li a{
+    text-decoration: none;
+    color: #fff;
+}
+.gmailAccount li a:hover{
+    color:#1B99EE;
+}
+
+
+
+/* section G */
+
+.footerline{
+    display: block;
+    width: 66%;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+    padding: 30px ;
+    background-color: rgba(33,33,33,1);
+}
+  .sectionG {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: rgba(33,33,33,1);
+    padding-top:60px ;
+  }
+  
+  .SGlogoBox {
+    width: 60px;
+    margin-top: 0;
+    font-size: 20px;
+    user-select: none;
+}
+.ii{
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+
+}
+.endname{
+    text-align: center;
+    background-color:rgba(33,33,33,1) ;
+    /* margin-top: 0px; */
+    padding: 10px;
+}
+
+  
+
+
+
+
+
+/* 
+@media (max-width:1600px) {
+
+    sectionE
+
+    .cards{
+        padding:10px 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5rem;
+        margin-bottom: 100px;
+
+    }
+    .card{
+        position: relative;
+        width: 240px;
+        height: 240px;
+        background: linear-gradient(90deg, rgba(33,33,33,1) 0% ,rgba(26,163,255,1) 100%);
+        border-radius: .5rem;
+        overflow: hidden;
+        transition: .5s;
+    }
+    .card_title{
+        padding: 0px 0px 0px 20px;
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+    }
+    .card_title h3{
+        color: #fff;
+        font-size: 15px;
+        z-index: 0;
+    }
+    .card_title span{
+        font-size: 14px;
+    }
+    .card_L{
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        border-radius: .5rem;
+        z-index: 1;
+    }
+    .cards .card_L img{
+        width: 100%;
+        height: 100%;
+        border-radius: .5rem;
+    }
+    #card:hover{
+        height: 355px;
+        transition: .5s;
+    }
+    #card:hover .card_title{
+        opacity: 1;
+    }
+    #card_2:hover{
+        height: 355px;
+        transition: .5s;
+    }
+    #card_2:hover .card_title{
+        opacity: 1;
+    }
+    #card_3:hover{
+        height: 355px;
+        transition: .5s;
+    }
+    #card_3:hover .card_title{
+        opacity: 1;
+    }
+} */
+@media(max-width:1600px){
+
+    /* sectionD */
+
+    .SDimgeContainerBox{
+        /* width: 120px; */
+        margin: 30px;
+        
+    }
+}
+
+@media(max-width:1000px){
+
+    .navBar{
+
+        padding-bottom: 30px;
+    }
+
+    .navlinks{
+        display: none;
+    }
+    
+    .navberIcon{
+        display: block;
+    }
+
+}
+
+/* @media(max-width:767px */
+
+@media(max-width:767px){
+    
+    /* sectionA */
+
+    .SAleft{
+        width: 100%;
+        display: block;
+    }
+    /* .SAleftBox{
+        width: 90%;
+    } */
+    .SAbutton a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .SAright{
+        width: 78%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .SAright img{
+        width: 100%;
+    } 
+
+    /* sectionB */
+
+    .SBHeader h1{
+        font-size: 30px;
+    }
+    .SBleft img{
+        width: 80%;
+    }
+    .SBrightBox p{
+        font-size: 16px;
+    }
+
+    /* sectionC */
+
+    .SCleftBox{
+        /* margin-left: 25px; */
+        margin: 0 auto;
+    }
+    .SCleftBox p{
+        font-size: 16px;
+    }
+    .SCright img{
+        width: 80%;
+    }
+
+    /* sectionD */
+
+    .SDHeader h1{
+        font-size: 30px;
+    }
+    .SDleft{
+        width: 100%;
+        display: block;
+    }
+    .SDleftBox p{
+        font-size: 16px;
+    }
+    .SDright{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* @media(max-width:600px */
+
+@media(max-width:600px){
+
+    /* bar */
+
+    .menuContainer{
+        padding:5px ;
+    }
+
+    /* sectionA */
+
+    .SAleftBox{
+        padding-left:30px;
+    }
+
+    /* sectionB */
+
+    .sectionB{
+        display: flex;
+        flex-direction: column;
+    }
+    .SBleft{
+        width: 80%;
+        display: block;
+    }
+    .SAbutton a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .SBleft img{
+        width: 65%;
+    }
+    .SBright{
+        width: 100%;
+        display: block;
+    }
+   
+     /* sectionC */
+
+     .sectionC{
+        flex-direction: column;
+    }
+    .SCleft{
+        width: 100%;
+        display: block;
+    }
+    .SCright{
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+    .SCright img{
+        width: 80%;
+    }
+
+    /* sectionD */
+
+    .SDright{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .SDimgeContainerBox{
+        width: 100px;
+        margin: 15px;
+    }
+
+    /* sectionE */
+
+
+.cards{
+    padding:0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+.card{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(90deg, rgba(33,33,33,1) 0% ,rgba(26,163,255,1) 100%);
+    border-radius: .5rem;
+    overflow: hidden;
+    transition: .5s;
+}
+.card_L{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: .5rem;
+    z-index: 1;
+}
+.card_title{
+    padding: 0px 0px 0px 20px;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+}
+.card_title h3{
+    color: #fff;
+    font-size: 12px;
+    z-index: 0;
+}
+.card_title span{
+    font-size: 11px;
+}
+.card_title{
+    padding: 0px 0px 0px 20px;
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+}
+#card:hover{
+    height: 200px;
+    transition: .5s;
+}
+#card_2:hover{
+    height: 200px;
+    transition: .5s;
+}
+#card_3:hover{
+    height: 200px;
+    transition: .5s;
+}
+#card.active{
+    height: 300px;
+}
+#card_2.active{
+    height: 300px;
+}
+#card_3.active{
+    height: 300px;
+}
+
+/* footer  */
+
+.Doogle{
+    display: none;
+}
+.faceBook{
+    width: 50%;
+    /* display: block; */
+    
+}
+.phoneNumber{
+    width: 50%;
+    /* display: block; */
+    
+}
+.gmailAccount{
+    width: 100%;
+    display: block;
+    
+}
+}
+
+/* @media(max-width:450px */
+
+@media(max-width:450px){
+    
+    /* sectionE */
+    #card:hover{
+        height: 220px;
+        transition: .5s;
+    }
+    #card_2:hover{
+        height: 220px;
+        transition: .5s;
+    }
+    #card_3:hover{
+        height: 220px;
+        transition: .5s;
+    }
+    .card{
+        width: 220px;
+        height: 220px;
+    }
+    .card_L{
+        width: 220px;
+        height: 220px;
+    }
+    #card.active{
+        height: 330px;
+    }
+    #card_2.active{
+        height: 330px;
+    }
+    #card_3.active{
+        height: 330px;
+    }
+    .card_title h3{
+        font-size: 14px;
+    }
+    .card_title span{
+        font-size: 12px;
+    }
+
+    /* footer */
+
+    
+    .Doogle{
+        display: none;
+    }
+    .faceBook{
+        width: 100%;
+        display: block;
+        
+    }
+    .phoneNumber{
+        width: 100%;
+        display: block;
+        
+    }
+    .gmailAccount{
+        width: 100%;
+        display: block;
+        
+    }
+}
+
+/* @media(max-width:343px) */
+
+@media(max-width:343px){
+
+
+    /* nav */
+    .logo {
+        font-size: 17px;
+        padding-left: 20px;
+    }
+    /* sectionA */
+
+    .SAleftBox{
+        width: 90%;
+        padding-left:30px;
+        margin: 0 auto;
+    }
+    .SAleftBox h1{
+        font-size: 25px;
+    }
+    .SAleftBox p{
+        font-size: 14px;
+    }
+    .SAbutton a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .SAright{
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    /* sectionb */
+
+    .SBHeader h1{
+        font-size: 25px;
+    }
+    .SBleft img{
+        width: 80%;
+    }
+    .SBrightBox p{
+        font-size: 14px;
+    }
+
+    /* sectionC */
+   
+    .SCleftBox p{
+        font-size: 14px;
+    }
+
+    /* sectionD */
+
+    .SDHeader h1{
+        font-size: 25px;
+    }
+    .SDleftBox p{
+        font-size: 14px;
+    }
+    .SDimgeContainerBox{
+        width: 80px;
+        margin: 10px;
+    }
+
+    /* sectionE */
+    .card{
+        width: 220px;
+        height: 220px;
+    }
+    .card_L{
+        width: 220px;
+        height: 220px;
+    }
+    #card:hover{
+        height: 220px;
+        transition: .5s;
+    }
+    #card_2:hover{
+        height: 220px;
+        transition: .5s;
+    }
+    #card_3:hover{
+        height: 220px;
+        transition: .5s;
+    }
+    #card.active{
+        height: 320px;
+    }
+    #card_2.active{
+        height: 320px;
+    }
+    #card_3.active{
+        height: 320px;
+    }
+}
+
+@media(max-width:275px){
+    .SAleftBox h1{
+        font-size: 22px;
+    }
+    .SAbutton a{
+        text-decoration: none;
+        color: #fff;
+    }
+}
