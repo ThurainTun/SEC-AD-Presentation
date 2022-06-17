@@ -247,7 +247,6 @@ body{
 .SCleftBox{
     width: 80%;
     text-align: left;
-    /* margin-left: 100px; */
     margin: 0 auto;
 }
 .SCright{
